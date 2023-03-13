@@ -19,5 +19,5 @@ final_draft, final_modify : Interim temporary folder for creating the front-end 
   
 ### etc  
   
-ECG 키트 연동 어플리케이션 제작 프로젝트 개발 계획서.pdf : ECG Kit Interworking Application Production Project Development Plan  
+ECG project plan.pdf : ECG Kit Interworking Application Production Project Development Plan  
 ECG Kit App Development Final Presentation.pptx : This is a pptx file that summarizes the explanations and principles of our ecg app.
