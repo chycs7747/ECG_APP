@@ -1,4 +1,4 @@
-# JDITeam_Project_ECG  
+# JDITeam_Project_ECG 
 ### Meaning of JDI - Just Do It!
 ### Members : 김준형, 박범순, 조정희, 최윤호
 
@@ -19,5 +19,5 @@ final_draft, final_modify : Interim temporary folder for creating the front-end 
   
 ### etc  
   
-ECG project plan.pdf : ECG Kit Interworking Application Production Project Development Plan  
-ECG Kit App Development Final Presentation.pptx : This is a pptx file that summarizes the explanations and principles of our ecg app.
+ECG_Plan.pdf : ECG Kit Interworking Application Production Project Development Plan  
+ECG_Kit_App_Development_Final_Presentation.pptx : This is a pptx file that summarizes the explanations and principles of our ecg app.
