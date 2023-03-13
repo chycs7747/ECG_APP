@@ -1,7 +1,5 @@
-# JDITeam_Project_ECG
-## Welcome to Our ECG Project!
-
-### JDI : Just Do It!  
+# JDITeam_Project_ECG  
+### Meaning of JDI - Just Do It!  
 ### Members : 김준형, 박범순, 조정희, 최윤호
 
 ##### Description  
