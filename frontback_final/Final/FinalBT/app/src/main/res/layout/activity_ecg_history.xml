@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:layout_margin = "10dp"
+    tools:context=".SignUp">
+
+    <ImageButton
+        android:id="@+id/Return_from_history_to_main_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/back"
+        android:background="#FFFFFF"/>
+
+
+    <TextView
+        android:id="@+id/Notice_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Return_from_history_to_main_button"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/blackhansans_regular"
+        android:gravity="center"
+        android:text="Choose the result you want to check!!"
+        android:textColor="#7000FF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/txt_question_type1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Notice_txt"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/spinner_black_border_bg"
+        android:gravity="center"
+        android:spinnerMode="dropdown"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/txt_question_type2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Notice_txt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/spinner_black_border_bg"
+        android:gravity="center"
+        android:spinnerMode="dropdown"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/txt_question_type3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_question_type1"
+        android:layout_alignStart="@id/txt_question_type1"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/spinner_black_border_bg"
+        android:gravity="center"
+        android:spinnerMode="dropdown"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/txt_question_type4"
+        android:layout_below="@id/txt_question_type2"
+        android:layout_alignStart="@id/txt_question_type2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:background="@drawable/spinner_black_border_bg"
+        android:spinnerMode="dropdown"
+        android:gravity="center"/>
+
+    <ListView
+        android:id="@+id/ecg_history_listview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/txt_question_type4"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/border" />
+
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_button"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_blue"
+        android:fontFamily="@font/blackhansans_regular"
+        android:text="clear history"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ecg_history_listview"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_blue"
+        android:fontFamily="@font/blackhansans_regular"
+        android:text="search history"
+        android:textColor="#ffffff" />
+
+    <!--
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="gotologin"
+        android:text="Button"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="328dp" />
+        -->
+</RelativeLayout>

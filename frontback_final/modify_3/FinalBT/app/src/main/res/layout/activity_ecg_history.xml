@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin = "10dp"
+    tools:context=".SignUp">
+
+    <Button
+        android:id="@+id/Return_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_blue"
+        android:onClick="onRtnBtnClicked"
+        android:text="Return to the main page"
+        android:textColor="#ffffff"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/Notice_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Return_button"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Choose the result you want to check!!"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/ecg_history_listview"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/Notice_txt"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border" />
+
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ecg_history_listview"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimary"
+        android:text="clear history"
+        android:textColor="#ffffff" />
+
+    <!--
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="gotologin"
+        android:text="Button"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="328dp" />
+        -->
+</RelativeLayout>

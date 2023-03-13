@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin = "10dp"
+    tools:context=".SignUp">
+
+    <ImageButton
+        android:id="@+id/Return_to_Login_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/back"
+        android:background="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/ecg_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:fontFamily="@font/blackhansans_regular"
+        android:textColor="@color/colorTitle"
+        android:text="ECG SIGNUP"/>
+
+    <TextView
+        android:id="@+id/signup_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ecg_signup"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:fontFamily="@font/blackhansans_regular"
+        android:textColor="#808080"
+        android:text="Create an Account for free!"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup_intro"
+        android:layout_alignLeft="@id/input_signup_address"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/blackhansans_regular"
+        android:text="Email"
+        android:textSize="10dp"/>
+
+    <EditText
+        android:id="@+id/input_signup_address"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/email"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/hint_padding"
+        android:fontFamily="@font/blackhansans_regular"
+        android:gravity="center_vertical"
+        android:hint=" Email address"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_signup_address"
+        android:layout_alignLeft="@id/input_signup_password"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/blackhansans_regular"
+        android:text="Password"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/input_signup_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/hint_padding"
+        android:fontFamily="@font/blackhansans_regular"
+        android:gravity="center_vertical"
+        android:hint=" Password"
+        android:textSize="15sp"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_signup_password"
+        android:layout_alignLeft="@id/input_signup_confirm_password"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/blackhansans_regular"
+        android:text="Confirm Password"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/input_signup_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/confirm_password"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/hint_padding"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/blackhansans_regular"
+        android:hint=" Confirm password"
+        android:textSize="15sp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/input_signup_confirm_password"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_blue"
+        android:fontFamily="@font/blackhansans_regular"
+        android:onClick="onRegisterButtonClicked"
+        android:text="Register"
+        android:textColor="#ffffff" />
+</RelativeLayout>

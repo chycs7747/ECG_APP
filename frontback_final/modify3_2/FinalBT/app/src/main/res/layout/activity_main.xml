@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="15dp">
+
+        <!--Top-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageButton
+                android:id="@+id/logOut"
+                android:layout_width="32dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:scaleX="0.8"
+                android:scaleY="1.0"
+                android:scaleType="fitXY"
+                android:src="@drawable/logout"
+                android:background="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/ECG_Controller_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1.5"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:fontFamily="@font/blackhansans_regular"
+                android:text="ECG CONTROLLER"
+                android:textColor="@color/colorTitle"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+            <ImageView
+                android:id="@+id/btOff_img"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/btoff"/>
+
+        </LinearLayout>
+
+        <!--Main Contents(Buttons)-->
+        <Button
+            android:id="@+id/start_ecg_btn"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginVertical="7dp"
+            android:drawableLeft="@drawable/heart"
+            android:drawableRight="@drawable/heart"
+            android:paddingHorizontal="26dp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_blue"
+            android:fontFamily="@font/blackhansans_regular"
+            android:textSize="35dp"
+            android:text="Start Ecg"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/showGraphBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:onClick="onShowGraphBtnClicked"
+            android:background="@drawable/btn_blue"
+            android:drawableLeft="@drawable/graph"
+            android:drawableRight="@drawable/graph"
+            android:paddingHorizontal="26dp"
+            android:fontFamily="@font/blackhansans_regular"
+            android:text="show graph"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/ecgHistoryBtn"
+            android:onClick="ecgHistoryButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/btn_blue"
+            android:drawableLeft="@drawable/list"
+            android:drawableRight="@drawable/list"
+            android:paddingHorizontal="26dp"
+            android:fontFamily="@font/blackhansans_regular"
+            android:text="ECG Result History"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/PairedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/btn_blue"
+            android:fontFamily="@font/blackhansans_regular"
+            android:drawableLeft="@drawable/btimg"
+            android:drawableRight="@drawable/btimg"
+            android:paddingHorizontal="26dp"
+            android:text="Show paired Devices"
+            android:textColor="#ffffff"/>
+
+        <ListView
+            android:id="@+id/devicesListView"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_marginTop="5dp"
+            android:choiceMode="singleChoice"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <!--Bottom (Progress Bar)-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blackhansans_regular"
+                android:text="Received Data : " />
+
+            <TextView
+                android:id="@+id/progress_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/blackhansans_regular"
+                android:text="0%" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="bottom"
+            android:max="512"
+            android:progress="0" />
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

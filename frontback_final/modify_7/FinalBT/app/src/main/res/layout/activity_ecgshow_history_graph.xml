@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <ImageButton
+        android:id="@+id/Return_from_graph_to_history_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/back"
+        android:background="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/ecg_chart2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/blackhansans_regular"
+        android:gravity="center"
+        android:text="ECG Data Chart"
+        android:textColor="@color/colorTitle"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/additional_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chart2"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/blackhansans_regular"
+        android:text="Data"
+        android:textSize="20dp" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/ecg_chart2"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

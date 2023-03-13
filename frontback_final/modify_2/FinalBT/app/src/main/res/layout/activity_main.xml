@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ECG_Controller_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+
+                android:scaleX="2.0"
+                android:scaleY="2.0"
+                android:text="Ecg Controller"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:layout_weight="0.9"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20sp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="0.01" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="0.089" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/start_ecg_btn"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/red_to_pink"
+            android:text="Start Ecg"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/showGraphBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:onClick="onShowGraphBtnClicked"
+            android:background="@drawable/purple_to_pink"
+            android:text="show graph"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/ecgHistoryBtn"
+            android:onClick="ecgHistoryButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/purple_to_pink"
+            android:text="ECG Result History"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/onLogoutBtn"
+            android:onClick="ecgLogoutButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/purple_to_pink"
+            android:text="Log out"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/PairedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/purple_to_pink"
+            android:text="Show paired Devices"
+            android:textColor="#ffffff"/>
+
+        <ListView
+            android:id="@+id/devicesListView"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_marginTop="5dp"
+            android:choiceMode="singleChoice"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Received Data : " />
+
+            <TextView
+                android:id="@+id/progress_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="0%" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="bottom"
+            android:max="512"
+            android:progress="0" />
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

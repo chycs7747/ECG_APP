@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+
+    <TextView
+        android:id="@+id/ecg_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:fontFamily="@font/blackhansans_regular"
+        android:textColor="@color/colorTitle"
+        android:text="ECG LOGIN"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/heartbeating_gif_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/ecg_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/input_login_address"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/heartbeating_gif_img"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/hint_padding"
+        android:fontFamily="@font/blackhansans_regular"
+        android:gravity="center_vertical"
+        android:hint="  Email address"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/input_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/input_login_address"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/hint_padding"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/blackhansans_regular"
+        android:hint="  Password"
+        android:textSize="15sp"
+        android:inputType="textPassword"/>
+
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/input_login_password"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_blue"
+        android:fontFamily="@font/blackhansans_regular"
+        android:onClick="onLoginButtonClicked"
+        android:text="Login"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/login_button"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_blue"
+        android:fontFamily="@font/blackhansans_regular"
+        android:onClick="onSignUpButtonClicked"
+        android:text="Sign up"
+        android:textColor="#ffffff" />
+
+
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="right"
+        android:textSize="15sp"
+        android:fontFamily="@font/blackhansans_regular"
+        android:text="ver 2.0.22"/>
+</RelativeLayout>
