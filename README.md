@@ -1,4 +1,4 @@
-# JDITeam_Project_ECG 
+# ECG_APP
 ### Meaning of JDI - Just Do It!
 ### JDI Members : 김준형, 박범순, 조정희, 최윤호
 
